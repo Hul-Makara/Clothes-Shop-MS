@@ -99,8 +99,13 @@ const getProfile = async (req, res) => {
     }
 };
 
+const logout = async (req, res) => {
+    res.json({ message: 'Logged out successfully' });
+};
+
 module.exports = {
     register,
     login,
-    getProfile
+    getProfile,
+    logout
 };
